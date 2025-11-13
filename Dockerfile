@@ -7,9 +7,8 @@ USER root
 # 3. Install dependencies (as root)
 RUN apt-get update && apt-get install -y \
     # Add any packages you want here.
-    # cowsay is an example package, it can be removed.
+    # htop is an example package, it can be removed.
     htop \
-    cowsay \
     && rm -rf /var/lib/apt/lists/*
 
 # 4. Switch back to the original user
